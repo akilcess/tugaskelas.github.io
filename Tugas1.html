@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fontawesome/fontawesome-free-6.2.0-web/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi">
+    <title>Document</title>
+    
+</head>
+
+<style>
+        body{
+            padding: 0;
+            margin: 0;
+        }
+
+        .container{
+            display: flex;
+        }
+
+        .kiri{
+            width: 30%;
+            height: auto;
+            background-color: rgb(54, 49, 65);
+            
+        }
+
+     
+
+        .foto{
+        display: flex;
+        justify-content: center; 
+        margin-top: 30px;
+        } 
+
+        .gambar img{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+           
+            background-repeat: no-repeat;
+        }
+       
+        .nama h1{
+            font-size: 24px;
+            text-align: center;
+            color: white;
+        }
+        .nama h3{
+            color: white;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .kiri h2{
+            color: white;
+            text-shadow: 2px 5px black;
+            font-size: 26px;
+            margin-left: 15px;
+        }
+
+        .kiri p{
+            color: white;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 15px;
+          
+            
+        }
+        .garis{
+            width: 430px;
+            border-bottom: 2px solid black ;
+            margin-top: 2px;
+            margin-left: 15px;
+        }
+        .medsos i{
+            margin-left: 15px;
+            color: white;
+        }
+
+        .bahasa i{
+          margin-left: 15px;
+          color: white;
+        }
+
+        .kanan{
+            width: 70%;
+            height: auto;
+            background-color: rgb(226, 229, 214);
+        }
+
+         
+        .judul{
+            position: relative;
+            left: 10px;
+            animation-name: example;
+            animation-duration: 4s;
+            animation: iteration count 1px;;
+        }
+
+       
+
+         
+        .judul h2{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: black;
+            font-size: 28px;
+            text-shadow: 3px 4px purple;
+           
+           
+        }
+
+        .isi{
+            width: auto;
+            height: auto;
+        }
+       
+
+        .jumbotron  
+        {
+            width: 900px;
+            height: 150px;
+            margin-left: 100px;
+            margin-top: 50px;
+            display: flex;   
+        }
+
+        .jumbotron h1{
+          text-shadow: 3px 3px gray;
+        }
+        
+        .skill{
+            text-align: center;
+        }
+
+        .skillulti{
+            width: 700px;
+            height: 30px;
+            background-color: gray;
+            border-radius: 20px 20px 20px 20px;
+            margin-left: 200px;
+            display: flex;
+            
+            
+        }
+
+        .javascript{
+            width: 700px;
+            height: 30px;
+            background-color: yellow;
+            border-radius: 20px 20px 20px 20px;
+        }
+
+        .html{
+ 
+            width: 600px;
+            height: 30px;
+            background-color: blue;
+            border-radius: 20px 20px 20px 20px;
+        }
+        
+        .php
+        {
+            width:300px;
+            height: 30px;
+            background-color:chartreuse;
+            border-radius: 20px 20px 20px 20px;
+        }
+        
+        .ajax
+        {
+            width:150px;
+            height: 30px;
+            background-color:darkgoldenrod;
+            border-radius: 20px 20px 20px 20px;
+        }
+        .laravel{
+            width: 50px;
+            height: 30px;
+            background-color:darkviolet;
+            border-radius: 20px 20px 20px 20px;
+        }
+
+        .persenan{
+            width: auto;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            display: flex;
+            margin-top: 30px;
+            gap: 25px;
+        }
+
+        .persenan2{
+            width: auto;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            display: flex;
+            margin-top: 30px;
+            gap: 25px;
+            position: relative;
+            top: -40px;
+        }
+
+        .kotak{
+            display: flex;
+            gap: 20px;
+        }
+
+        .bulat{
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: yellow;
+        }
+         
+        .bulat2{
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: blue;
+        }
+
+        .bulat3{
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color:darkgoldenrod;
+        }
+
+        .bulat4{
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color:chartreuse;
+        }
+        .bulat5{
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color:darkviolet;
+        }
+        .deskripsi{
+            position: relative;
+            top: -25px;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .jl
+        {
+            width: 33.3%;
+            height: auto;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            border-right: 3px solid black;
+            color:black;
+            font-variant: initial;
+            
+           
+        }
+
+        .jm
+        {
+            width: 33.3%;
+            height: auto;
+           text-align: center;
+            border-right: 3px solid black;
+            
+        }
+
+        .jr
+        {
+            width: 33.3%;
+            height: auto;
+            text-align: center;
+            border-right: 3px solid black;
+        }
+        .garis2{
+            width: 900px;
+            height: 2px;
+            border-bottom: 1px solid black;
+            position: relative;
+            top: 25px;
+           left: 100px;
+        }
+
+        .jumbotron h1{
+            font-family: sans-serif;
+        }
+       
+        .jumbotron2{
+          
+            width: 900px;
+            height: 150px;
+            background-color: rgb(102, 98, 134);
+            margin-left: 100px;
+            margin-top: 50px;
+            display: flex;
+          
+        }
+
+        
+
+        .satu{
+         
+            gap: 20px;
+            margin-left: 20px;
+        }
+
+        .satu i{
+            position: relative;
+            top: 25px;
+            
+        }
+
+        .satu p{
+            font-size: 18px;
+            position: relative;
+            top: -15px;
+            left: 40px;
+        }
+
+        .dua{
+         
+         gap: 20px;
+         margin-left: 20px;
+     }
+
+     .dua i{
+         position: relative;
+         top: 25px;
+         left: -365px;
+         top: 60px;
+         
+     }
+
+     .dua p{
+         font-size: 18px;
+         position: relative;
+         left: -325px;
+         top: 20px;
+     }
+
+     .tiga{
+        position: relative;
+        top: -40px;
+     }
+     
+     .jumbotron3  
+        {
+            width: 900px;
+            height: 170px;
+            margin-left: 100px;
+            margin-top: 50px;
+            background-color: rgb(102, 98, 134);
+        }
+
+        .jumbotron3 h1{
+          text-shadow: 3px 3px gray;
+          text-align: center;
+          font-size: 24px;
+          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .atas p {
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+        .contentbawah{
+            width: auto;
+            height: 400px;
+            background: url("white-abstract-background_23-2148810113.webp");
+            text-align: center;
+            margin-top: -20px;
+        }
+
+        .contentbawah p {
+            font-size: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: black;
+            font-variant: initial;
+        }
+
+        .contentbawah input{
+            width: 300px;
+            height: 30px;
+            color: black;
+        }
+
+        .contentbawah button{
+            width: 150px;
+            height: 35px;
+            background-color: rgb(74, 87, 188);
+            margin-top: 20px;
+            margin-left: -160px;
+            box-sizing: border-box;
+            color: white;
+            font-size: 16px;
+            box-shadow: 0 12px 16px 0 rgba(48, 42, 92, 0.19), 0 17px 50px 0 rgba(48, 42, 92, 0.19);
+        }
+
+        .contentbawah button :hover{
+            width: 150px;
+            height: 35px;
+            background-color: red;
+          
+        }
+
+        .richtext input{
+            height: 80px;
+            color: black;
+        }
+
+       .footer{
+        width: auto;
+        height: 50px;
+        background-color: rgb(74, 87, 188);
+        text-align: center;
+       }
+       .footer p{
+        font-size: 18px;
+        color: black;
+        font-style: italic;
+        position: relative;
+        top: 15px;
+       }
+
+  
+
+       
+        
+</style>
+<body>
+    <div class="container">
+        <div class="kiri">
+            <div class="foto">
+                 <div class="gambar">
+                   <img src="WhatsApp Image 2022-10-14 at 19.33.29.jpeg" alt="">
+                 </div>
+            </div>
+            <div class="nama">
+                <h1>Muhammad Akillah</h1>
+                <h3>219116814</h3>
+            </div>
+            <div class="tentang">
+                <h2>About me</h2>
+                <p>nama saya muhammad Akillah, saya berkuliah di istts jurusan informatika, sekarang saya semester 7, For example, a recruiter may be of one gender or one race. Certainly not fair to other applicants, and also not good for the company because the recruitment process is not based on ability.</p>
+            </div>
+            <div class="garis">
+          
+            </div>
+            <div class="medsos">
+                <h2>Media Sosial</h2>
+                <i class="fa-brands fa-facebook fa-sm"> : Akil</i>
+                <br>
+                <br>
+                <i class="fa-brands fa-instagram fa-sm"> : @y.akill</i>
+                <br>
+                <br>
+                <i class="fa-brands fa-twitter fa-sm">  : Akilcess</i>
+                <br>
+                <br>
+            </div>
+
+            <div class="garis">
+
+            </div>
+
+            <div class="bahasa">
+                <h2>Bahasa</h2>
+                <i class="fa-solid fa-flag"> indonesia</i>
+                <br>
+                <br>
+                <i class="fa-solid fa-flag"> English </i>
+            </div>
+        </div>
+        <div class="kanan">
+           <div class="judul">
+           <h2>Work Experince</h2>
+           </div>
+           <div class="isi">
+            <div class="jumbotron">
+                <h1>
+                    DATA DIRI :
+                </h1>
+             <div class="jl">
+              <p>Nama lengkap   : Muhammad Akillah</p>
+              <p>nama panggilan : Akil</p>
+              <p>asal           : Palu</p>
+              <p>Tempat dan tanggal lahir : Donggala, 5 september 2001</p>
+             </div>
+             <div class="jm">
+              <p>SD : SDN IMPRES BOYAOGE</p>
+              <p>SMP : SMP 3 PALU</p>
+              <p>SMA : AMA KARUNA DIPA PALU</p>
+              <p>Status : Belum Menikah</p>
+             </div>
+             <div class="jr">
+             <p>EMAIL : Akilcess@gmail.com</p>
+             <p>NO Hp : 085823717390</p>
+             <p>Tinggi Badan : 162 CM</p>
+             <p>Berat BADAN : 50 Kg</p>
+             <p></p>
+             </div>
+            </div>
+            <div class="garis2">
+
+            </div>
+        
+            <div class="jumbotron2">
+            
+                <h1>Prestasi</h1>
+
+               <div class="satu">
+                <i class="fa-solid fa-trophy fa-xl"></i>
+                <p>Juara 3 lomba Bahasa inggris Tingkat Provinsi</p>
+               </div>
+
+               <div class="dua">
+                <i class="fa-solid fa-trophy fa-xl"></i>
+                <p>Juara 5 Story Telling Antara kabupaten</p>
+                <div class="tiga">
+                    <i class="fa-solid fa-trophy fa-xl"></i>
+                <p>Juara 1 Taekwondo Berat 45 Kg Tingkat Provinsi</p>
+                </div>
+               
+               
+
+               </div>
+
+               <div class="tiga">
+               
+               </div>
+            
+            </div>
+            
+            <div class="jumbotron3">
+                <h1>Kemampuan</h1>
+              
+                <div class="atas">
+                <p>Informasi Teknologi : Bisa Bahasa pemrograman C++, C#, Java, Visual Basic, Html CSS dan lainya</p>
+                <p>Bahasa : Bahasa indonesia dan Inggris (Aktif) English (Pasif)</p>
+                <p>Editor : Photoshop, Adobe Primer</p>
+                </div>
+                </div>
+            </div>
+            
+            <div class="skill">
+                <h1>SKILL</h1>
+                <div class="skillulti">
+                <div class="javascript">
+                <div class="html">
+                <div class="php">
+                <div class="ajax">
+                <div class="laravel">
+
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+            </div>
+            
+            <div class="persenan">
+               <div class="kotak">
+                  <div class="bulat">
+
+                  </div>
+                  <div class="deskripsi">
+                    <p>javascript</p>
+                  </div>    
+               </div>
+
+               <div class="kotak">
+                <div class="bulat2">
+
+                </div>
+                <div class="deskripsi">
+                  <p>HTML & CSS</p>
+                </div>    
+             </div>
+
+             <div class="kotak">
+                <div class="bulat3">
+
+                </div>
+                <div class="deskripsi">
+                  <p>PHP</p>
+                </div>    
+             </div>
+
+             <div class="kotak">
+                <div class="bulat4">
+
+                </div>
+                <div class="deskripsi">
+                  <p>Jquery</p>
+                </div>    
+             </div>
+
+            </div>
+            <div class="persenan2">
+                <div class="kotak">
+                   <div class="bulat5">
+ 
+                   </div>
+                   <div class="deskripsi">
+                     <p>SCSS</p>
+                   </div>    
+                </div>
+           </div>
+
+
+
+        </div>
+    </div>
+   
+   
+   <div class="contentbawah">
+      <p>Nama Lengkap :</p>
+      <input type="text" name="" id="" placeholder="Nama lengkap">
+      <br>
+      <p>Gmail :</p>
+      <input type="text" name="" id="" placeholder="Gmail">
+      <br>
+      <div class="richtext">
+        <p>Pesan :</p>
+        <input type="text" name="" id="" placeholder="">
+      </div>
+ 
+        <button onclick="kirim()">Kirim</button>
+    
+
+        <script>
+           
+        </script>
+    
+   </div>
+
+   <div class="footer">
+    <p>Copyright | Muhammad Akillah</p>
+   </div>
+</body>
+</html>
